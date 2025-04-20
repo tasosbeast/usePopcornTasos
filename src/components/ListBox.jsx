@@ -1,7 +1,6 @@
 import { useState } from "react";
-import MoviesList from "./MoviesList";
 
-function ListBox() {
+function ListBox({ children }) {
   const [isOpen1, setIsOpen1] = useState(true);
   return (
     <div className="box">
@@ -11,7 +10,7 @@ function ListBox() {
       >
         {isOpen1 ? "–" : "+"}
       </button>
-      {isOpen1 && <MoviesList />}
+      {isOpen1 && children}
     </div>
   );
 }
