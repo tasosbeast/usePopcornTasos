@@ -59,7 +59,11 @@ function StarRating({
           />
         ))}
       </div>
-      <p style={textStyle}>{tempRating || rating || ""}</p>
+      <p style={textStyle}>
+        {maxRating === messages.length
+          ? messages[tempRating ? tempRating - 1 : rating - 1]
+          : tempRating || rating || ""}
+      </p>
     </div>
   );
 }
