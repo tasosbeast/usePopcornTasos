@@ -54,6 +54,8 @@ function StarRating({
             onHoverIn={() => setTempRating(i + 1)}
             onHoverOut={() => setTempRating(0)}
             full={tempRating ? tempRating >= i + 1 : rating >= i + 1}
+            color={color}
+            size={size}
           />
         ))}
       </div>
