@@ -21,13 +21,15 @@ const starContainerStyle = {
   display: "flex",
 };
 
-const textStyle = {
-  lineHeight: "1",
-  margin: "0",
-};
 function StarRating({ maxRating = 5 }) {
   const [rating, setRating] = useState(0);
   const [tempRating, setTempRating] = useState(0);
+  const textStyle = {
+    lineHeight: "1",
+    margin: "0",
+    color,
+    fontSize: `${size / 1.2}px`,
+  };
   return (
     <div style={containerStyle}>
       <div style={starContainerStyle}>
