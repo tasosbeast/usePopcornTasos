@@ -7,6 +7,8 @@ import Search from "./components/Search";
 import NumofResults from "./components/Numofresults";
 import Box from "./components/Box";
 import MoviesList from "./components/MoviesList";
+import WatchedSummary from "./components/WatchedSummary";
+import WatchedMoviesList from "./components/WatchedMoviesList";
 
 export default function App() {
   const [movies, setMovies] = useState(tempMovieData);
