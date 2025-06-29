@@ -21,8 +21,16 @@ const starContainerStyle = {
   display: "flex",
 };
 
-function StarRating({ maxRating = 5 }) {
-  const [rating, setRating] = useState(0);
+function StarRating({
+  maxRating = 5,
+  color = "#fcc419",
+  size = 48,
+  className = "",
+  messages = [],
+  defaultRating = 0,
+  onSetRating,
+}) {
+  const [rating, setRating] = useState(defaultRating);
   const [tempRating, setTempRating] = useState(0);
   const textStyle = {
     lineHeight: "1",
