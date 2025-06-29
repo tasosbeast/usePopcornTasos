@@ -7,6 +7,16 @@ const containerStyle = {
   gap: "16px",
 };
 
+StarRating.propTypes = {
+  maxRating: PropTypes.number,
+  defaultRating: PropTypes.number,
+  color: PropTypes.string,
+  size: PropTypes.number,
+  className: PropTypes.string,
+  messages: PropTypes.arrayOf(PropTypes.string),
+  onSetRating: PropTypes.func,
+};
+
 const starContainerStyle = {
   display: "flex",
 };
