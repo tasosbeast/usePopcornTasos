@@ -12,7 +12,7 @@ import Loader from "./components/Loader";
 import ErrorMessage from "./components/ErrorMessage";
 import MovieDetails from "./components/MovieDetails";
 
-const KEY = "3479a937";
+export const KEY = "3479a937";
 export default function App() {
   const [query, setQuery] = useState("");
   const [movies, setMovies] = useState([]);
@@ -104,6 +104,7 @@ export default function App() {
             <MovieDetails
               selectedId={selectedId}
               onCloseMovie={handleCloseMovie}
+              KEY={KEY}
             />
           ) : (
             <>
