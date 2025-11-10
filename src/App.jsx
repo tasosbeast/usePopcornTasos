@@ -10,7 +10,6 @@ import WatchedSummary from "./components/WatchedSummary";
 import WatchedMoviesList from "./components/WatchedMoviesList";
 import Loader from "./components/Loader";
 import ErrorMessage from "./components/ErrorMessage";
-import SelectedMovie from "./components/MovieDetails";
 import MovieDetails from "./components/MovieDetails";
 
 const KEY = "3479a937";
