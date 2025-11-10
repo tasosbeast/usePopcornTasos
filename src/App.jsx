@@ -62,7 +62,7 @@ export default function App() {
           setIsLoading(false); // stop showing the loader regardless of success or failure
         }
       }
-      if (!query.length) {
+      if (query.length < 3) {
         setMovies([]);
         setError("");
         return;
